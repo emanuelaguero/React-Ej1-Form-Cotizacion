@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/2.jpg");
+    height: 100vh;
+    background-size: cover;
+
+}
+
+
+
+#container {
+
+
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px #fff;
+}
+
+.form-titulo {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+
+}
+
+.form-principal-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+
+.input-box:nth-child(2n) {
+    justify-content: end;
+}
+
+.input-box {
+  
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 2px;
+   
+}
+
+.input-box label {
+    width: 95%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.input-box input {
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.input-box select {
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.btn-enviar {
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    background: rgb(63, 114, 76, 0.7);
+}
+
+.btn-enviar:hover {
+    cursor: pointer;
+    background: rgba(84, 175, 107, 0.7);
+}
+
+.contenedor-valor {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+#tipoSeguro {
+    color: #fff;
+}
+
+.msj-enviado{
+    color: greenyellow;
+    font-size: 20px;
+}
+.caja{
+    width: 95%;
+    height:30%;
+   
+}
+p{
+   
+    width: 95%;
+    color:red;
+   
+}
+
+.firma {
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+    padding-top: 6px;
+    margin-top: 60px;
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
+    border-top: solid 1px white;
+  
+
+}
+
+@media(max-width:600px){
+    .container{
+        min-width:280px
+    }
+    .input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+    
+
+}

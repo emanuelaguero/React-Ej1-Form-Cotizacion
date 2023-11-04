@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Cotización</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <div id="container">
+        <h1 class="form-titulo">FORMULARIO COTIZACIÓN</h1>
+
+        <form id="formCotizacion1" onsubmit="formCotizacion(event)">
+            <div class="form-principal-info">
+                <div class="input-box">
+                    <label for="Nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese Nombre" >
+                    <div class="caja"><p class="error-nombre"></p></div>
+                </div>
+                <div class="input-box">
+                    <label for="Apellido">Apellido:</label> 
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingrese Apellido">
+                    <div class="caja"><p class="error-apellido"></p></div>
+                </div>
+                <div class="input-box">
+                    <label for="Dni">Dni:</label> 
+                    <input type="number" name="dni" id="dni" placeholder="Ingrese Dni">
+                    <div class="caja"><p class="error-dni"></p></div>
+                </div>
+                <div class="input-box">
+                    <label for=" Email"> Email:</label>
+                    <input type="mail" name="email" id="email" placeholder="Ingrese una direccion de Email">
+                    <div class="caja"><p class="error-email"></p></div>
+                </div>
+                <div class="input-box">
+                    <label for=" Telefono"> Telefono:</label>
+                    <input type="number" name="telefono" id="telefono" placeholder="Ingrese un Telefono">
+                    <div class="caja"><p class="error-telefono"></p></div>
+                </div>
+                <div class="input-box">
+                    <label for=" Precio"> Tipo de Seguro:</label>
+                    <select onchange="cambiarValor(value)">
+                        <option value="500">Básico</option>
+                        <option value="1000">Intermedio</option>
+                        <option value="1500">Avanzado</option>
+                    </select>
+                    <div class="contenedor-valor">
+                        <span id="tipoSeguro"></span>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-enviar">Enviar</button>
+
+            </div>
+            <span class="msj-enviado"></span>
+        </form>
+        <div class="firma">Emanuel Agüero</div>
+        
+
+      
+    </div>
+   
+    
+  
+    <script  src="js/javaScript.js"></script>
+</body>
+
+</html>
